@@ -4,21 +4,20 @@ Este proyecto consiste en el desarrollo y despliegue de una aplicación web senc
 
 ## Instrucciones para ejecutar el proyecto
 
-1. **Clonar el repositorio:**
-   git clone 
+# Clonar el repositorio 
    
-2. **Abrir el proyecto en Visual Studio**
+# Abre el proyecto en Visual Studio
 
-3. Abre una terminal en la raíz del proyecto y ejecuta los siguientes comandos:
+# Abre una terminal en la raíz del proyecto y ejecuta los siguientes comandos:
 
-4. **Contruir la imagen**
+# Contruir la imagen
 docker compose build
 
-5. **Levantar el contenedor**
+# Levantar el contenedor
  docker compose up -d
 
- 6. **Comprobar estado del conteendor**
+ # Comprobar estado del conteendor
  docker compose ps
 
- 7. **Abre cualquier navegador web e ingresa a la siguiente dirección**
+ # Abre cualquier navegador web e ingresa a la siguiente dirección
  http://localhost:8081
