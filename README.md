@@ -1,23 +1,23 @@
-# Aplicación Web Responsiva Contenedorizada - MAPEZZA
+# Aplicación Web Responsiva - MAPEZZA
 
-Este proyecto consiste en el desarrollo y despliegue de una aplicación web sencilla y responsiva para el menú de un restaurante denominado **MAPEZZA**, empaquetada y desplegada utilizando tecnología de contenedores con Docker y Docker Compose.
+Este proyecto consiste en el desarrollo y despliegue de una aplicación web sencilla y responsiva para el menú de un restaurante denominado **MAPEZZA**.
 
-# Instrucciones para ejecutar el proyecto
+## Instrucciones para ejecutar el proyecto
 
-### Clonar el repositorio 
+### 1. Clonar el repositorio 
    
-### Abre el proyecto en Visual Studio
+### 2. Abre el proyecto en Visual Studio
 
-### Abre una terminal en la raíz del proyecto y ejecuta los siguientes comandos:
+### 3. Abre una terminal en la raíz del proyecto y ejecuta los siguientes comandos:
 
-### Contruir la imagen
+### 4. Contruir la imagen
     docker compose build
 
-### Levantar el contenedor
+### 5. Levantar el contenedor
     docker compose up -d
 
- ### Comprobar estado del conteendor
+ ### 6. Comprobar estado del conteendor
     docker compose ps
 
- ### Abre cualquier navegador web e ingresa a la siguiente dirección
- ´´´http://localhost:8081´´´
+ ### 7. Abre cualquier navegador web e ingresa a la siguiente dirección
+ ```http://localhost:8081´´´
