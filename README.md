@@ -2,22 +2,22 @@
 
 Este proyecto consiste en el desarrollo y despliegue de una aplicación web sencilla y responsiva para el menú de un restaurante denominado **MAPEZZA**, empaquetada y desplegada utilizando tecnología de contenedores con Docker y Docker Compose.
 
-## Instrucciones para ejecutar el proyecto
+# Instrucciones para ejecutar el proyecto
 
-# Clonar el repositorio 
+### Clonar el repositorio 
    
-# Abre el proyecto en Visual Studio
+### Abre el proyecto en Visual Studio
 
-# Abre una terminal en la raíz del proyecto y ejecuta los siguientes comandos:
+### Abre una terminal en la raíz del proyecto y ejecuta los siguientes comandos:
 
-# Contruir la imagen
-docker compose build
+### Contruir la imagen
+    docker compose build
 
-# Levantar el contenedor
- docker compose up -d
+### Levantar el contenedor
+    docker compose up -d
 
- # Comprobar estado del conteendor
- docker compose ps
+ ### Comprobar estado del conteendor
+    docker compose ps
 
- # Abre cualquier navegador web e ingresa a la siguiente dirección
- http://localhost:8081
+ ### Abre cualquier navegador web e ingresa a la siguiente dirección
+ ´´´http://localhost:8081´´´
