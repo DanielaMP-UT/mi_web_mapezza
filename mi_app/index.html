@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPEZZA - Menú</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Colores personalizados del diseño */
+    body {
+      background-color: #FFFDE7; /* Fondo crema claro */
+    }
+    .navbar-mapezza {
+      background-color: #FF5722; /* Naranja principal */
+    }
+    .banner-bienvenida {
+      background-color: #E64A19; /* Naranja oscuro */
+      color: white;
+    }
+    .platillo-card {
+      background: linear-gradient(180deg, #FFFFCC 0%, #FFE0B2 100%);
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-weight: bold;
+      color: #E64A19;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .precio {
+      color: #000;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Barra de Navegación Naranja -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-mapezza px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-2 text-white" href="#">MAPEZZA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold text-uppercase">
+          <li class="nav-item"><a class="nav-link active text-white px-3" href="#">Entradas</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-3" href="#">Plato Principal</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-3" href="#">Postres</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-3" href="#">Bebidas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Imágenes Superiores (2 columnas) -->
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Entrada 1">
+      </div>
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Entrada 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Banner de Bienvenida -->
+  <div class="banner-bienvenida text-center py-3">
+    <h2 class="fw-bold m-0 text-uppercase">¡ BIENVENIDO A MAPEZZA !</h2>
+  </div>
+
+  <!-- 4. Menú de Platillos (Dos columnas) -->
+  <div class="container my-4">
+    <div class="row g-3">
+      
+      <!-- Columna Izquierda -->
+      <div class="col-12 col-md-6">
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>BRUSCHETTAS DE TOMATE Y ALBAHACA</span>
+          <span class="precio">$ 150</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>BROCHETAS CAPRESE</span>
+          <span class="precio">$ 110</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>CEVICHE DE CAMARÓN O PESCADO</span>
+          <span class="precio">$ 110</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>TOSTADAS DE SALMÓN AHUMADO</span>
+          <span class="precio">$ 130</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>CHAMPIÑONES RELLENOS</span>
+          <span class="precio">$ 160</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>BRUSCHETTAS DE TOMATE Y ALBAHACA</span>
+          <span class="precio">$ 150</span>
+        </div>
+      </div>
+
+      <!-- Columna Derecha -->
+      <div class="col-12 col-md-6">
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>BRoCHETTAS DE TOMATE Y ALBAHACA</span>
+          <span class="precio">$ 150</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>BROCHETAS CAPRESE</span>
+          <span class="precio">$ 110</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>CEVICHE DE CAMARÓN O PESCADO</span>
+          <span class="precio">$ 110</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>TOSTADAS DE SALMÓN AHUMADO</span>
+          <span class="precio">$ 130</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>CHAMPIÑONES RELLENOS</span>
+          <span class="precio">$ 160</span>
+        </div>
+        <div class="platillo-card d-flex justify-content-between align-items-center mb-3">
+          <span>BRUSCHETTAS DE TOMATE Y ALBAHACA</span>
+          <span class="precio">$ 150</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 5. Imágenes Inferiores (2 columnas) -->
+  <div class="container-fluid p-0 mt-4">
+    <div class="row g-0">
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Pizza MAPEZZA">
+      </div>
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Postre MAPEZZA">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

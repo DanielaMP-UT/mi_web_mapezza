@@ -1,0 +1,10 @@
+services:
+  cliente_pwa:
+    image: mapezza-app-imagen:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web_mapezza
+    restart: always
+    ports:
+      - "8081:80"
