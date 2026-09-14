@@ -20,4 +20,4 @@ Este proyecto consiste en el desarrollo y despliegue de una aplicación web senc
     docker compose ps
 
  ### 7. Abre cualquier navegador web e ingresa a la siguiente dirección
- ```http://localhost:8081´´´
+URL: ```http://localhost:8081```
