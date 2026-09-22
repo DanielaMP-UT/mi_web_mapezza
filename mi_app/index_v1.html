@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPEZZA - Menú</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    /* Colores personalizados del diseño */
+    body {
+      background-color: #FFFDE7; 
+    }
+    .navbar-mapezza {
+      background-color: #FF5722; 
+    }
+    .banner-bienvenida {
+      background-color: #E64A19; 
+      color: white;
+    }
+    .platillo-card {
+      background: linear-gradient(180deg, #FFFFCC 0%, #FFE0B2 100%);
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-weight: bold;
+      color: #E64A19;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .precio {
+      color: #000;
+      font-size: 1.1rem;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!---Barra de Navegación Naranja--->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-mapezza px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-2 text-white" href="#">MAPEZZA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-bold text-uppercase">
+          <li class="nav-item"><a class="nav-link active text-white px-3" href="#">Entradas</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-3" href="#">Plato Principal</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-3" href="#">Postres</a></li>
+          <li class="nav-item"><a class="nav-link text-white px-3" href="#">Bebidas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!---Imágenes Superiores --->
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Entrada 1">
+      </div>
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 250px; object-fit: cover;" alt="Entrada 2">
+      </div>
+    </div>
+  </div>
+
+  <!---Banner de Bienvenida--->
+  <div class="banner-bienvenida text-center py-3">
+    <h2 class="fw-bold m-0 text-uppercase">¡ BIENVENIDO A MAPEeeeeZZA !</h2>
+  </div>
+
+ <div class="container my-4">
+    <div class="row" id="contenedor-menu">
+   
+    </div>
+  </div>
+
+  <!---DATOS EN  JSON--->
+  <script>
+    fetch('menu.json')
+      .then(respuesta => respuesta.json())
+      .then(datos => {
+        const contenedor = document.getElementById('contenedor-menu');
+        let htmlContenido = '';
+
+        datos.forEach(platillo => {
+          /*console.log(platillo)*/
+          htmlContenido += `
+            <div class="col-12 col-md-6 mb-3" id="platillo-${platillo.id}">
+              <div class="platillo-card d-flex justify-content-between align-items-center" data-id="${platillo.id}">
+                <span>${platillo.nombre}</span>
+                <span class="precio">$ ${platillo.precio}</span>
+              </div>
+            </div>
+          `;
+        });
+
+        contenedor.innerHTML = htmlContenido;
+      })
+      .catch(error => console.error('Error al cargar el JSON:', error));
+  </script>
+
+  <!---Imágenes Inferiores --->
+  <div class="container-fluid p-0 mt-4">
+    <div class="row g-0">
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Pizza MAPEZZA">
+      </div>
+      <div class="col-6">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800&auto=format&fit=crop" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Postre MAPEZZA">
+      </div>
+    </div>
+  </div>
+
+  <!---Bootstrap JS--->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
