@@ -6,5 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: web_mapezza
     restart: always
+    volumes:
+      - ./mi_app:/var/www/html/
     ports:
       - "8081:80"
