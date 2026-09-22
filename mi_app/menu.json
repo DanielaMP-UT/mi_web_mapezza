@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "BROCHETAS DE TOMATE Y ALBAHACA",
+    "precio": 150
+  },
+  {
+    "id": 2,
+    "nombre": "BROCHETAS CAPRESE",
+    "precio": 110
+  },
+  {
+    "id": 3,
+    "nombre": "CEVICHE DE CAMARÓN O PESCADO",
+    "precio": 110
+  },
+  {
+    "id": 4,
+    "nombre": "TOSTADAS DE SALMÓN AHUMADO",
+    "precio": 130
+  },
+  {
+    "id": 5,
+    "nombre": "CHAMPIÑONES RELLENOS",
+    "precio": 160
+  },
+  {
+    "id": 6,
+    "nombre": "BROCHETAS DE TOMATE Y ALBAHACA",
+    "precio": 150
+  },
+  {
+    "id": 7,
+    "nombre": "BROCHETAS DE TOMATE Y ALBAHACA",
+    "precio": 150
+  },
+  {
+    "id": 8,
+    "nombre": "BROCHETAS CAPRESE",
+    "precio": 110
+  },
+  {
+    "id": 9,
+    "nombre": "CEVICHE DE CAMARÓN O PESCADO",
+    "precio": 110
+  },
+  {
+    "id": 10,
+    "nombre": "TOSTADAS DE SALMÓN AHUMADO",
+    "precio": 130
+  },
+  {
+    "id": 11,
+    "nombre": "CHAMPIÑONES RELLENOS",
+    "precio": 160
+  },
+  {
+    "id": 12,
+    "nombre": "BROCHETAS DE TOMATE Y ALBAHACA",
+    "precio": 150
+  }
+]
