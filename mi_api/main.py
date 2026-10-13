@@ -28,10 +28,7 @@ def leer_raiz():
 #lo regrese como respuesta
 @app.get("/getdata")
 def leer_datos(response: Response):
-    #leer los datos del json de una ruta
-    #para leer los datos verificar si esxiste el archivo
-    #si existe se remplasa el contenido de datos por lo que existe en el archivo
-    #si no retornar datos no encontrados y se devuelve vacio el dato
+
     # Define la ruta del archivo
     ruta_archivo = Path('menu.json')
 
@@ -46,6 +43,8 @@ def leer_datos(response: Response):
                 "Mensaje":"Datos obtenidos con exito",
                 "Datos":datos
             }
+
+# ------------------------------------ ERROR 404 ------------------------------------------
     else:
         response.status_code = status.HTTP_404_NOT_FOUND
     
@@ -84,7 +83,7 @@ def leer_datos_mdb(response: Response):
         print(doc_json) #Imprime cada documento ya convertido a JSON
         lista_platillos.append(doc_json)
 
-        # Si encontramos platillos en la base de datos
+       
     if lista_platillos:
         return {
             "Mensaje": "Datos obtenidos con éxito desde MongoDB",
