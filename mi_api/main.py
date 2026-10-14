@@ -97,6 +97,38 @@ def leer_datos_mdb(response: Response):
             "Datos": {}
         }
 
+# ------------------------------------ CONEXIÓN CON MONGODB COMPASS ------------------------------------------
+@app.put("/agregarPlatillo")
+def insertar_datos_mdb(response: Response,
+    id: int,           # 2. Parámetro de ruta (Path parameter)
+    nombre: str,       # 3. Parámetro de cuerpo (Request body usando Pydantic)
+    precio: float   # 4. Parámetro de consulta opcional (Query parameter)
+):
+    # return {
+    #     "id": id,
+    #     "nombre": nombre,
+    #     "precio": precio
+    # }
+    client = MongoClient("mongodb://usuario_escritura:Danileeyescribe@localhost:27017/?authSource=menu_pwa")
+    db = client["menu_pwa"]
+    collection = db["platillos"]
+
+
+    print("--- All Documents ---")
+    respuesta= collection.insert_one({
+    "id":id,
+    "nombre": nombre,
+    "precio":precio
+})
+
+    print(f"Documento insertado con el ID: {str(respuesta.inserted_id)}")
+    return{
+    "id": str(respuesta.inserted_id)
+}
+
+
+
+
 
     # ruta_archivo = Path('menu.json')
 
